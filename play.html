@@ -6,16 +6,19 @@
         <link rel="stylesheet" href="styles.css"/>
     </head>
     <body>
-        <section class="playCont">
-            <section id="difficultyLevels">
-              <button class= "homebuttons" onclick="window.location.href = '#';">Easy</button>
-              <br> </br>
-              <button class= "homebuttons" type="submit" onclick="window.location.href = '#';">Medium</button>
-              <br> </br>
-              <button class= "homebuttons" type="submit" onclick="window.location.href = '#';">Boss Level</button>
-            </section>
-          </section>
-        <button class= "homebuttons" onclick="window.location.href = 'index.html';">Main Menu</button>
-        <script src="index.js"></script>
+      <section class="timerBox">
+        <h1 id="timer">Time: 0</h1>
+        <button id="startBtn" type="submit">Start</button>
+      </section>
+      <section class="gameBoard">
+        <span class="boardItem"></span><span class="boardItem"></span><span class="boardItem"></span><span class="boardItem"></span>
+        <span class="boardItem"></span><span class="boardItem"></span><span class="boardItem"></span><span class="boardItem"></span>
+        <span class="boardItem"></span><span class="boardItem"></span><span class="boardItem"></span><span class="boardItem"></span>
+        <span class="boardItem"></span><span class="boardItem"></span><span class="boardItem"></span><span class="boardItem"></span>
+      </section>
+      <button class= "restartBtn" type="reset" onclick="window.location.href = 'difficultyGame.html'";>Restart</button>
+
+      <button class= "homebuttons" onclick="window.location.href = 'index.html';">Main Menu</button>
+      <script src="index.js"></script>
     </body>
 </html>

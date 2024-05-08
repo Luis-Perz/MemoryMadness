@@ -57,25 +57,25 @@ p{
     animation-delay: .6s;
 }
 .gameTitle span:nth-child(8){
-    animation-delay: .7s;
+    animation-delay: .1s;
 }
 .gameTitle span:nth-child(9){
-    animation-delay: .8s;
+    animation-delay: .2s;
 }
 .gameTitle span:nth-child(10){
-    animation-delay: .9s;
+    animation-delay: .3s;
 }
 .gameTitle span:nth-child(11){
-    animation-delay: 1s;
+    animation-delay: .4s;
 }
 .gameTitle span:nth-child(12){
-    animation-delay: 1.1s;
+    animation-delay: .5s;
 }
 .gameTitle span:nth-child(13){
-    animation-delay: 1.2s;
+    animation-delay: .6s;
 }
 .gameTitle span:nth-child(14){
-    animation-delay: 1.3s;
+    animation-delay: .7s;
 }
 
 @keyframes bounce {
@@ -184,15 +184,24 @@ p{
     
 }
 
-.gameBoard{
+#board{
     background-color:#F08080;
-    height: 35rem;
-    width: 30rem;
+    height: 600px;
+    width: 500px;
     margin: 0 auto;
- 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-evenly;
 }
 
-.restartBtn{
+.icon{
+    height: 64px;
+    width: 64px;
+}
+
+#restartBtn{
     background:none;
     color: white;
     width: 200px;
@@ -202,27 +211,11 @@ p{
     font-size: larger;
     font-weight: 800;
     margin: 25px;
+    margin-bottom: 15rem;
 }
-.restartBtn:hover{
+#restartBtn:hover{
     background-color:#F08080;
     color: white;
     cursor: pointer;
     text-transform: uppercase;
-}
-
-/* ----- GameBoard ----- */
-
-.timerBox{
-    display: flex;
-    flex-direction:row;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
-#startBtn{
-    background: #2F4F4F;
-    height: 40px;
-    width: 60px;
-    border-radius: 15%;
 }
